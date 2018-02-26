@@ -1,24 +1,21 @@
 (function app() {
   'use strict';
+
   document.addEventListener('DOMContentLoaded', () => {
-/*
-    _.templateSettings = {
-      evaluate: /<%([\s\S]+?)%>/g,
-      interpolate: /<%=([\s\S]+?)%>/g,
-      escape: /<%-([\s\S]+?)%>/g,
-    };
-*/
-    const template = _.template(
+
+    const appTemplate = _.template(
       $('#app-template').html(),
-      { variable: 'data' }
+      { variable: 'model' }
     );
-    const render = () => {
-      $('#app').html(template({
-        one: 'ololo',
-        two: 'trololo',
-        three: 'O.o',
-      }))
+
+    const model = {
+      name: 'Maksimko',
     };
+
+    const render = () => $('#app').html(appTemplate(model));
+
     render();
+
   }, false);
+
 })();
