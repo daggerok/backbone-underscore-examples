@@ -6,11 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>JS Examples</title>
   <link rel="shortcut icon" type="image/x-icon" href="./app/favicon.ico">
-  <link rel="stylesheet" href="./app/styles.css">
+  <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app/styles.css">
 </head>
 <body>
+<!-- templates -->
+<script type="text/template" id="app-template">
+  <ul>
+    <li><%= data.one %></li>
+    <li><%= data.two %></li>
+    <li><%= data.three %></li>
+  </ul>
+</script>
+<!-- app -->
 <div id="app"></div>
-<!--<script src="./register-sw.js"></script>-->
+<!--<script src="register-sw.js"></script>-->
+<script src="vendors/jquery/dist/jquery.min.js"></script>
+<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendors/underscore/underscore-min.js"></script>
+<script src="vendors/backbone/backbone-min.js"></script>
 <script src="app/main.js"></script>
 </body>
 </html>
