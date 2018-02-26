@@ -1,6 +1,9 @@
 = Backbone / Underscore image:https://travis-ci.org/daggerok/backbone-underscore-examples.svg?branch=master["Build Status", link="https://travis-ci.org/daggerok/backbone-underscore-examples"]
 
-This repo is contains simple Backbone / Underscore playground test projects
-
-. link:./_starter[starter]
-. link:./_starter[first blood]
+.build, run, deploy
+[source,bash]
+----
+yarn -i
+yarn start
+yarn deploy
+----
